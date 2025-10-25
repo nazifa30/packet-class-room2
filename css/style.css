@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, ui-sans-serif, system-ui, Arial, Helvetica, sans-serif
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #041422 0%, #06232e 70%);
+  margin: 0;
+  padding: 0;
+  color: #e6fbfa
+}
+
+
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+@media (max-width: 576px) {
+  h3 {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    padding-top: 15px;
+  }
+
+  .btn {
+    margin-bottom: 10px;
+  }
+}
+
+.navbar {
+  margin: 0;
+  /* Ensure no margin */
+
+}
+
+
+
+/* Media Query for Small Screens */
+@media (max-width: 576px) {
+  .btn-library {
+    padding: 0.1rem;
+    /* Adjust padding for smaller buttons */
+    font-size: 0.2rem;
+    /* Smaller font size */
+
+  }
+}
+
+@media (max-width: 576px) {
+
+  .dropdown-toggle,
+  #exportButton {
+    padding: 0.25rem 0.5rem;
+    /* Smaller padding */
+    font-size: 0.75rem;
+    /* Smaller font size */
+    width: 100%;
+    /* Full width on small screens */
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
+  }
+}
+
+/* Optional: Adjust dropdown menu appearance */
+.dropdown-menu {
+  max-height: 200px;
+  /* Limit dropdown height */
+  overflow-y: auto;
+  /* Scroll if too many options */
+  background: linear-gradient(180deg, #041422 0%, #06232e 70%);
+}
+
+.nav-container {
+  background: linear-gradient(180deg, #04101a 0%, #06232e 70%);
+  padding: 15px;
+  box-shadow: 0 0 0 0.2px gray;
+}
+
+.custom-container {
+  margin: 18px auto;
+  padding: 14px;
+  box-shadow: 0 0 0 0.2px gray;
+  border-radius: 8px;
+  /* Optional: for rounded corners */
+  background: linear-gradient(180deg, #04101a 0%, #06232e 70%);
+}
+
+.form-control {
+  background: linear-gradient(180deg, #04101a 0%, #06232e 70%);
+  border: none;
+  /* Remove default border */
+  box-shadow: 0 0 0 0.2px gray;
+  /* Custom border */
+  transition: border 0.3s ease;
+  /* Transition for hover effect */
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+  /* Placeholder text color */
+}
+
+.form-control:hover {
+  border: 2px solid white;
+  /* White border on hover */
+}
+
+textarea {
+  background: linear-gradient(180deg, #04101a 0%, #06232e 70%);
+  border: none;
+  /* Remove default border */
+  box-shadow: 0 0 0 0.2px gray;
+  /* Custom border */
+  transition: border 0.3s ease;
+  /* Transition for hover effect */
+  color: white !important;
+}
+
+textarea:hover {
+  border: 2px solid white;
+  /* White border on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .container {
+    padding: 10px;
+    /* Reduce padding for smaller screens */
+  }
+}
+
